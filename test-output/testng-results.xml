@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My first suite" duration-ms="3118" started-at="2019-04-30T19:58:44Z" finished-at="2019-04-30T19:58:47Z">
+    <groups>
+    </groups>
+    <test name="My first test" duration-ms="7" started-at="2019-04-30T19:58:44Z" finished-at="2019-04-30T19:58:44Z">
+      <class name="com.automation.uitests.AutomationTest">
+        <test-method status="PASS" signature="paramString_Correct(java.lang.String, java.lang.String)[pri:0, instance:com.automation.uitests.AutomationTest@326de728]" name="paramString_Correct" duration-ms="2" started-at="2019-04-30T16:58:44Z" finished-at="2019-04-30T16:58:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[I hate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ bugs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paramString_Correct -->
+        <test-method status="PASS" signature="string_Correct()[pri:0, instance:com.automation.uitests.AutomationTest@326de728]" name="string_Correct" duration-ms="0" started-at="2019-04-30T16:58:44Z" finished-at="2019-04-30T16:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- string_Correct -->
+      </class> <!-- com.automation.uitests.AutomationTest -->
+    </test> <!-- My first test -->
+    <test name="WikiTests" duration-ms="3089" started-at="2019-04-30T19:58:44Z" finished-at="2019-04-30T19:58:47Z">
+      <class name="com.automation.uitests.WikiTests">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.uitests.WikiTests@357246de]" name="beforeSuite" is-config="true" duration-ms="3587" started-at="2019-04-30T16:58:40Z" finished-at="2019-04-30T16:58:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="loadPage()[pri:0, instance:com.automation.uitests.WikiTests@357246de]" name="loadPage" is-config="true" duration-ms="1014" started-at="2019-04-30T16:58:44Z" finished-at="2019-04-30T16:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPage -->
+        <test-method status="PASS" signature="search_Correct()[pri:0, instance:com.automation.uitests.WikiTests@357246de]" name="search_Correct" duration-ms="2074" started-at="2019-04-30T16:58:45Z" finished-at="2019-04-30T16:58:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Correct -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.uitests.WikiTests@357246de]" name="afterSuite" is-config="true" duration-ms="663" started-at="2019-04-30T16:58:47Z" finished-at="2019-04-30T16:58:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.automation.uitests.WikiTests -->
+    </test> <!-- WikiTests -->
+  </suite> <!-- My first suite -->
+</testng-results>

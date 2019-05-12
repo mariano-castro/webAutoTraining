@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [My first suite]">
+  <parameter name="stringA" value="I hate"/>
+  <parameter name="stringB" value=" bugs"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="My first test(failed)">
+    <classes>
+      <class name="com.automation.uitests.AutomationTest">
+        <methods>
+          <include name="paramString_Correct"/>
+          <include name="string_Correct"/>
+        </methods>
+      </class> <!-- com.automation.uitests.AutomationTest -->
+      <class name="com.automation.uitests.WikiTests">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.automation.uitests.WikiTests -->
+    </classes>
+  </test> <!-- My first test(failed) -->
+  <test name="WikiTests(failed)">
+    <classes>
+      <class name="com.automation.uitests.WikiTests">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="search_Correct"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.automation.uitests.WikiTests -->
+    </classes>
+  </test> <!-- WikiTests(failed) -->
+</suite> <!-- Failed suite [My first suite] -->
