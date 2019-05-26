@@ -21,7 +21,7 @@ public class WikiHomePage extends BasePage {
 
     public ArticlePage performSearch(String keyword){
         searchInput.sendKeys(keyword);
-        getWait().until(ExpectedConditions.elementToBeClickable(searchButton));
+        //getWait().until(ExpectedConditions.elementToBeClickable(searchButton));
         searchButton.click();
         return new ArticlePage(getDriver());
     }

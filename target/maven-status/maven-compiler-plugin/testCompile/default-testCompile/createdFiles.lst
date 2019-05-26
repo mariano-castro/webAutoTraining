@@ -1,2 +1,5 @@
-com\automation\pageobjects\Home.class
-com\automation\uitests\HomeTests.class
+com\automation\pageobjects\ArticlePage.class
+com\automation\uitests\AutomationTest.class
+com\automation\uitests\WikiTests.class
+com\automation\pageobjects\WikiHomePage.class
+com\automation\uitests\BaseTest.class

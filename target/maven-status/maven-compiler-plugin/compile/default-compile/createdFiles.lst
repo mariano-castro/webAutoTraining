@@ -1,1 +1,4 @@
-com\automation\Base.class
+com\automation\MyDriver.class
+com\automation\BasePage.class
+com\automation\interfaces\ConfigProps.class
+com\automation\PageData.class
