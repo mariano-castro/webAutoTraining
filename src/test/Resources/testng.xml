@@ -4,7 +4,7 @@
 
     <parameter name="stringA" value="I hate"/>
     <parameter name="stringB" value=" bugs"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
 
     <test name ="My first test" >
         <classes>
