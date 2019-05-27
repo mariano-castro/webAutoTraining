@@ -1,7 +1,8 @@
 {
-"includedGroups": [
-	"uno",
+"expectedProjectTitles": [
+	"Wikimedia Commons",
 	"dos",
 	"tres"
-]
+],
+	"pageTitle": "Bienvenidos a Wikipedia,"
 }

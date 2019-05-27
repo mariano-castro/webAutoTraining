@@ -10,8 +10,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import org.json.simple.JSONArray;
+import org.openqa.selenium.WebElement;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class WikiTests extends BaseTest {
 
@@ -32,11 +34,20 @@ public class WikiTests extends BaseTest {
     }
 
     @Test
-    public void leftColumnProjects_Correct() {
-        Object[] jsonHeaders = ((JSONArray) data.get("includedGroups")).toArray();
-        String[] expectedHeaders = Arrays.copyOf(jsonHeaders, jsonHeaders.length, String[].class);
-        System.out.println(expectedHeaders[1]);
+    public void leftColumnProjects_Displayed() {
+        Object[] jsonTitles = ((JSONArray) data.get("expectedProjectTitles")).toArray();
+        String[] projectTitles = Arrays.copyOf(jsonTitles, jsonTitles.length, String[].class);
+        Assert.assertNotEquals(home.actualProjectTitles.size(), 0, "List came empty");
+        for (int i=0; i < home.actualProjectTitles.size(); i++){
+            Assert.assertTrue(home.actualProjectTitles.get(i).isDisplayed(), "The element at index "+i+"was not displayed");
+
+        }
     }
 
+    @Test
+    public void pageTitle_Correct() {
+        String title = data.get("pageTitle").toString();
+        Assert.assertEquals(home.searchInput.getText(), title);
+    }
 
 }
