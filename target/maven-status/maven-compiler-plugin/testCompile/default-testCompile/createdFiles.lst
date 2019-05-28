@@ -1,5 +1,7 @@
 com\automation\pageobjects\ArticlePage.class
 com\automation\uitests\AutomationTest.class
 com\automation\uitests\WikiTests.class
+com\automation\pageobjects\WikiHomePageEs.class
 com\automation\pageobjects\WikiHomePage.class
 com\automation\uitests\BaseTest.class
+com\automation\uitests\WikiTestsEs.class

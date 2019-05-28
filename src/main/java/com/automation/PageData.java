@@ -29,7 +29,7 @@ public class PageData {
 	protected void loadJSONObject(String classPath) {
 		classPath = classPath.replace('.', '/');
 
-		String basePath = Paths.get("C:\\Users\\mariano.castro\\webAutoTraining\\src\\test\\Resources\\data").toAbsolutePath().toString();
+		String basePath = Paths.get("src\\test\\Resources\\data").toAbsolutePath().toString();
 		path = getJsonFilePath(basePath, classPath);
 
 		JSONObject jsonObject;

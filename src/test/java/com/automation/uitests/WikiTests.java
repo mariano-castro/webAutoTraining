@@ -1,9 +1,11 @@
 package com.automation.uitests;
 
+import com.automation.MyDriver;
 import com.automation.PageData;
 import com.automation.pageobjects.ArticlePage;
 import com.automation.pageobjects.WikiHomePage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,7 +15,7 @@ public class WikiTests extends BaseTest {
     WikiHomePage home;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void loadPage(){
         home = new WikiHomePage(myDriver.getDriver());
         data = new PageData(WikiTests.class.getSimpleName());
