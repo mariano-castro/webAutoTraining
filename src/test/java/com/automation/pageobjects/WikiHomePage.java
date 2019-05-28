@@ -4,9 +4,6 @@ import com.automation.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.util.List;
 
 public class WikiHomePage extends BasePage {
 
@@ -20,9 +17,6 @@ public class WikiHomePage extends BasePage {
 
     @FindBy(xpath = "//button[@class='pure-button pure-button-primary-progressive']")
     private WebElement searchButton;
-
-    @FindBy(id = "sarchInput")
-    public List<WebElement> actualProjectTitles;
 
     public ArticlePage performSearch(String keyword){
         searchInput.sendKeys(keyword);

@@ -17,4 +17,10 @@
             <class name = "com.automation.uitests.WikiTests"/>
         </classes>
     </test>
+
+    <test name ="WikiTestsEs" >
+        <classes>
+            <class name = "com.automation.uitests.WikiTestsEs"/>
+        </classes>
+    </test>
 </suite>
