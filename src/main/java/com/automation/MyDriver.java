@@ -1,12 +1,11 @@
 package com.automation;
 
-import org.testng.annotations.Parameters;
+import org.testng.annotations.AfterSuite;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class MyDriver {
@@ -32,6 +31,7 @@ public class MyDriver {
         return this.driver;
     }
 
+    @AfterSuite(alwaysRun = true)
     public void disposeDriver(){
         if (driver != null)
             driver.quit();
